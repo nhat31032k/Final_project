@@ -1,32 +1,32 @@
 <template>
   <div>
     <!-- Vertical navbar -->
-    <div class="vertical-nav bg-white" id="sidebar">
-      <div class="py-4 px-3 mb-4 bg-light">
+    <div class="bg-white vertical-nav" id="sidebar">
+      <div class="px-3 py-4 mb-4 bg-light">
         <div class="media d-block align-items-center">
           <img
             src="../../assets/home.jpg"
             alt="..."
             width="65"
-            class="mr-5 rounded-circle img-thumbnail shadow-sm"
+            class="mr-5 shadow-sm rounded-circle img-thumbnail"
             
           />
           <br>
           <div class="media-body">
-            <h5 class="m-0">Hoang Anh Gia Lai</h5>
+            <h5 class="m-0 media-title">Gia Lai Hoang Anh</h5>
             
           </div>
         </div>
       </div>
 
-      <p class="text-gray font-weight-bold text-uppercase px-3 small pb-4 mb-0">
+      <!-- <p class="px-3 pb-4 mb-0 text-gray font-weight-bold text-uppercase small">
         Main
-      </p>
+      </p> -->
 
-      <ul class="nav flex-column bg-white mb-0">
+      <ul class="mb-0 bg-white nav flex-column">
         <sidebar-item v-for="item in listTitle" :key="item.id" :item="item" />
         <li class="nav-item" @click="logOut" style="cursor: pointer">
-          <a class="nav-link text-dark font-italic"><i class="fa fa-sign-out mr-3 text-primary fa-fw"></i>Logout</a>
+          <a class="nav-link text-dark font-italic"><i class="mr-3 fa fa-sign-out text-primary fa-fw"></i>Logout</a>
         </li>
       </ul>
     </div>
@@ -118,7 +118,12 @@ export default {
   margin-left: 17rem;
   transition: all 0.4s;
 }
-
+ .media-title {
+color: transparent;
+background-clip: text;
+-webkit-background-clip: text;
+background-image: linear-gradient( to right,  #3d8aee,  #b4f866);
+ }
 /* for toggle behavior */
 
 #sidebar.active {

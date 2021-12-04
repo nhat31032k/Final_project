@@ -38,7 +38,7 @@ a {
 }
 
 a:hover {
-  color: #2eca6a;
+  color: #2e7fca;
   text-decoration: none;
 }
 

@@ -7,22 +7,24 @@
           <div class="col-sm-12 col-md-4">
             <div class="widget-a">
               <div class="w-header-a">
-                <h3 class="w-title-a text-brand">EstateAgency</h3>
+                <h3 class="w-title-a text-brand">More Infomation</h3>
               </div>
               <div class="w-body-a">
                 <p class="w-text-a color-text-a">
-                  Enim minim veniam quis nostrud exercitation ullamco laboris
-                  nisi ut aliquip exea commodo consequat duis sed aute irure.
+                  lorem ipsum dolor sit amet, consectetur
+                  lorem ipsum dolor sit amet, consectetur
+                  lorem ipsum dolor sit amet, consectetur
+                  lorem ipsum dolor sit amet, consectetur
                 </p>
               </div>
               <div class="w-footer-a">
                 <ul class="list-unstyled">
                   <li class="color-a">
-                    <span class="color-text-a">Phone .</span>
-                    contact@example.com
+                    <span class="color-text-a">Phone:</span>
+                  0909833265
                   </li>
                   <li class="color-a">
-                    <span class="color-text-a">Email .</span> +54 356 945234
+                    <span class="color-text-a">Email:</span> +54 356 945234
                   </li>
                 </ul>
               </div>
@@ -40,7 +42,7 @@
                       <i class="fa fa-angle-right"></i> <a href="#">Site Map</a>
                     </li>
                     <li class="item-list-a">
-                      <i class="fa fa-angle-right"></i> <a href="#">Legal</a>
+                      <i class="fa fa-angle-right"></i> <a href="#">Kms</a>
                     </li>
                     <li class="item-list-a">
                       <i class="fa fa-angle-right"></i>
@@ -65,18 +67,18 @@
           <div class="col-sm-12 col-md-4 section-md-t3">
             <div class="widget-a">
               <div class="w-header-a">
-                <h3 class="w-title-a text-brand">International sites</h3>
+                <h3 class="w-title-a text-brand">International Sites</h3>
               </div>
               <div class="w-body-a">
                 <ul class="list-unstyled">
                   <li class="item-list-a">
-                    <i class="fa fa-angle-right"></i> <a href="#">Venezuela</a>
+                    <i class="fa fa-angle-right"></i> <a href="#">America</a>
                   </li>
                   <li class="item-list-a">
-                    <i class="fa fa-angle-right"></i> <a href="#">China</a>
+                    <i class="fa fa-angle-right"></i> <a href="#">VietNam</a>
                   </li>
                   <li class="item-list-a">
-                    <i class="fa fa-angle-right"></i> <a href="#">Hong Kong</a>
+                    <i class="fa fa-angle-right"></i> <a href="#">India</a>
                   </li>
                   <li class="item-list-a">
                     <i class="fa fa-angle-right"></i> <a href="#">Argentina</a>
@@ -99,7 +101,7 @@
       <div class="container">
         <div class="row">
           <div class="col-md-12">
-            <nav class="nav-footer">
+            <!-- <nav class="nav-footer">
               <ul class="list-inline">
                 <li class="list-inline-item">
                   <a href="#">Home</a>
@@ -117,8 +119,8 @@
                   <a href="#">Contact</a>
                 </li>
               </ul>
-            </nav>
-            <div class="socials-a">
+            </nav> -->
+            <!-- <div class="socials-a">
               <ul class="list-inline">
                 <li class="list-inline-item">
                   <a href="#">
@@ -146,7 +148,7 @@
                   </a>
                 </li>
               </ul>
-            </div>
+            </div> -->
             <div class="copyright-footer">
               <p class="copyright color-text-a">
                 &copy; Copyright
@@ -188,7 +190,7 @@ a {
 }
 
 a:hover {
-  color: #2eca6a;
+  color: #336deb;
   text-decoration: none;
 }
 
@@ -312,7 +314,7 @@ a:hover {
 .section-footer .item-list-a i {
   font-size: 18px;
   padding-right: 4px;
-  color: #2eca6a;
+  color: #3d88eb;
 }
 
 .section-footer .widget-a .w-title-a {

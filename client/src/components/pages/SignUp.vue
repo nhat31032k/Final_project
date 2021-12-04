@@ -1,21 +1,21 @@
 <template>
   <div class="container">
-    <h1 style="text-align: center">Create an Account</h1>
+    <h1 style="text-align: center" class= " container-title">Create an Account</h1>
     <h3 style="text-align: center; display: none" class="notify">Register successfully !!!</h3> 
-    <div class="row py-5 mt-4 align-items-center">
+    <div class="py-5 mt-4 row align-items-center">
       <!-- For Demo Purpose -->
-      <div class="col-md-5 pr-lg-5 mb-5 mb-md-0" >
+      <div class="mb-5 col-md-5 pr-lg-5 mb-md-0" >
         <img
          src="../../assets/home.jpg"
           alt=""
-          class="img-fluid mb-3 d-none d-md-block"
+          class="mb-3 img-fluid d-none d-md-block"
           style="width: 90%"
         />
         <button style="margin-left: 20%" @click="$router.push({name: 'dashboard'})" class="btn btn-success">Return dashboard</button>
       </div>
 
       <!-- Registeration Form -->
-      <div class="col-md-7 col-lg-6 ml-auto">
+      <div class="ml-auto col-md-7 col-lg-6">
         <p v-if="errors.length">
           <b>Please correct the following error(s):</b>
           <ul>
@@ -26,10 +26,10 @@
           <div class="row">
            
             <!-- User Name -->
-            <div class="input-group col-lg-12 mb-4">
+            <div class="mb-4 input-group col-lg-12">
               <div class="input-group-prepend">
                 <span
-                  class="input-group-text bg-white px-4 border-md border-right-0"
+                  class="px-4 bg-white input-group-text border-md border-right-0"
                 >
                   <i class="fa fa-user text-muted"></i>
                 </span>
@@ -41,11 +41,11 @@
                 placeholder="Username"
                 @change="checkUsername"
                 v-model="data.username"
-                class="form-control bg-white border-left-0 border-md"
+                class="bg-white form-control border-left-0 border-md"
               />
               <div class="input-group-prepend check" style="display: none">
                 <span
-                  class="input-group-text bg-white px-4 border-md border-left-0"
+                  class="px-4 bg-white input-group-text border-md border-left-0"
                 >
                   <i class="fa fa-times" style="color: red; display: none"></i>
                 </span>
@@ -53,10 +53,10 @@
             </div>
 
             <!-- drop down for type of account -->
-            <div class="input-group col-lg-12 mb-4">
+            <div class="mb-4 input-group col-lg-12">
               <div class="input-group-prepend">
                 <span
-                  class="input-group-text bg-white px-4 border-md border-right-0"
+                  class="px-4 bg-white input-group-text border-md border-right-0"
                 >
                   <i class="fa fa-list text-muted"></i>
                 </span>
@@ -68,7 +68,7 @@
                 v-model="data.ID_type_account"
               >
                 <option value="" disabled selected hidden
-                  >Select type of account</option
+                  > Please select type of account</option
                 >
                 <option value="1">Admin</option>
                 <option value="2">Staff</option>
@@ -77,10 +77,10 @@
             </div>
 
             <!-- Password -->
-            <div class="input-group col-lg-12 mb-4">
+            <div class="mb-4 input-group col-lg-12">
               <div class="input-group-prepend">
                 <span
-                  class="input-group-text bg-white px-4 border-md border-right-0"
+                  class="px-4 bg-white input-group-text border-md border-right-0"
                 >
                   <i class="fa fa-lock text-muted"></i>
                 </span>
@@ -92,15 +92,15 @@
                 autocomplete="new-password"
                 placeholder="Password"
                 v-model="data.password"
-                class="form-control bg-white border-left-0 border-md"
+                class="bg-white form-control border-left-0 border-md"
               />
             </div>
 
             <!-- Password Confirmation -->
-            <div class="input-group col-lg-12 mb-4">
+            <div class="mb-4 input-group col-lg-12">
               <div class="input-group-prepend">
                 <span
-                  class="input-group-text bg-white px-4 border-md border-right-0"
+                  class="px-4 bg-white input-group-text border-md border-right-0"
                 >
                   <i class="fa fa-lock text-muted"></i>
                 </span>
@@ -112,14 +112,14 @@
                 name="passwordConfirmation"
                 placeholder="Confirm Password"
                 v-model="data.password_confirm"
-                class="form-control bg-white border-left-0 border-md"
+                class="bg-white form-control border-left-0 border-md"
               />
             </div>
 
             <!-- Submit Button -->
-            <div class="form-group col-lg-12 mx-auto mb-0">
-              <button type="submit" class="btn btn-primary btn-block py-2">
-                <span class="font-weight-bold">Create account</span>
+            <div class="mx-auto mb-0 form-group col-lg-12">
+              <button type="submit" class="py-2 btn btn-primary btn-block">
+                <span class="font-weight-bold">Create Account</span>
               </button>
             </div>
           </div>
@@ -244,5 +244,17 @@ select.form-control {
 }
 .form-control:focus {
   box-shadow: none;
+}
+.container-title{
+  color: transparent;
+  background-clip: text;
+  -webkit-background-clip: text;
+  background-image: linear-gradient( to right,  #1762d3,  #f3f17a);
+}
+.notify{
+  color: red;
+}
+.btn-success{
+  background-color: #1762d3;
 }
 </style>

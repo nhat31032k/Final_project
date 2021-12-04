@@ -61,8 +61,8 @@ CREATE TABLE `admin` (
 --
 
 INSERT INTO `admin` (`ID`, `name`, `birthday`, `id_account`) VALUES
-(1, 'admin 1', '2021-04-08', 2),
-(2, 'admin 1', '2021-04-08', 2);
+(1, 'admin 1', '2021-11-10', 2),
+(2, 'admin 1', '2021-11-10', 2);
 
 -- --------------------------------------------------------
 
@@ -84,9 +84,9 @@ CREATE TABLE `assignment` (
 --
 
 INSERT INTO `assignment` (`ID`, `date`, `time_start`, `time_finish`, `job_name`, `id_staff`) VALUES
-(1, '2021-04-07', '08:00:00', '17:00:00', 'job 1', 1),
-(2, '2021-04-07', '08:00:00', '17:00:00', 'job 2', 3),
-(3, '2021-04-07', '08:00:00', '17:00:00', 'job 3', 2);
+(1, '2021-11-07', '08:00:00', '17:00:00', 'job 1', 1),
+(2, '2021-11-07', '08:00:00', '17:00:00', 'job 2', 3),
+(3, '2021-11-07', '08:00:00', '17:00:00', 'job 3', 2);
 
 -- --------------------------------------------------------
 
@@ -107,9 +107,9 @@ CREATE TABLE `news` (
 --
 
 INSERT INTO `news` (`id`, `title`, `date_post`, `content`, `id_admin`) VALUES
-(4, 'news 2', '2021-04-08 21:28:12', 'content 2', 1),
-(5, 'news 3', '2021-04-08 21:28:20', 'content 3', 1),
-(6, 'news 3', '2021-04-08 21:30:18', 'content 3', 1);
+(4, 'news 2', '2021-11-08 21:28:12', 'content 2', 1),
+(5, 'news 3', '2021-11-08 21:28:20', 'content 3', 1),
+(6, 'news 3', '2021-11-08 21:30:18', 'content 3', 1);
 
 -- --------------------------------------------------------
 
@@ -132,8 +132,8 @@ CREATE TABLE `person` (
 --
 
 INSERT INTO `person` (`ID`, `ID_person`, `name`, `email`, `phone_number`, `birthday`, `room_name`) VALUES
-(1, '123123123', 'Choco Soon', 'choco@gmail.com', '3214569870', '1999-03-02', 'C6.4'),
-(2, '13123124', 'Phạm Ngọc Quốc', 'pnq0505@gmail.com', '0123456789', '2000-05-03', 'C6.3');
+(1, '123123123', 'Johny Dang', 'choco@gmail.com', '3214569870', '1999-03-02', 'C6.4'),
+(2, '13123124', 'Phạm Văn A', 'pnq0505@gmail.com', '0123456789', '2000-05-03', 'C6.3');
 
 -- --------------------------------------------------------
 
@@ -153,18 +153,18 @@ CREATE TABLE `room` (
 --
 
 INSERT INTO `room` (`ID`, `room_name`, `ID_type_room`, `status`) VALUES
-(1, 'A101', 1, 'available'),
-(2, 'A102', 1, 'available'),
-(3, 'A103', 2, 'unavailable'),
-(4, 'A104', 1, 'available'),
-(5, 'A201', 1, 'available'),
-(6, 'A202', 2, 'available'),
-(7, 'A203', 1, 'available'),
-(8, 'A204', 1, 'unavailable'),
-(9, 'A301', 3, 'available'),
-(10, 'A302', 1, 'available'),
-(11, 'A303', 3, 'unavailable'),
-(12, 'A304', 1, 'available');
+(1, 'A101', 2, 'available'),
+(2, 'A102', 3, 'available'),
+(3, 'A103', 1, 'unavailable'),
+(4, 'A104', 2, 'available'),
+(5, 'A201', 2, 'available'),
+(6, 'A202', 1, 'available'),
+(7, 'A203', 3, 'available'),
+(8, 'A204', 2, 'unavailable'),
+(9, 'A301', 1, 'available'),
+(10, 'A302', 2, 'available'),
+(11, 'A303', 1, 'unavailable'),
+(12, 'A304', 2, 'available');
 
 -- --------------------------------------------------------
 
@@ -188,9 +188,9 @@ CREATE TABLE `service` (
 --
 
 INSERT INTO `service` (`ID`, `room_name`, `month`, `dien`, `nuoc`, `internet`, `rac`, `status`) VALUES
-(1, 'C6.1', '2021-04-08 14:48:18', 2000000, 2000000, 2000000, 2000000, 'paid'),
-(2, 'C6.2', '2021-04-08 14:49:22', 3000000, 2000000, 1000000, 3000000, 'unpaid'),
-(4, 'C6.1', '2021-04-08 14:51:34', 3000000, 2000000, 1000000, 3000000, 'unpaid');
+(1, 'C6.1', '2021-11-08 14:48:18', 1000000, 2200000, 2000000, 2000000, 'paid'),
+(2, 'C6.2', '2021-11-08 14:49:22', 1000000, 2000000, 3000000, 3000000, 'unpaid'),
+(4, 'C6.1', '2021-11-08 14:51:34', 3000000, 2000000, 2000000, 3000000, 'unpaid');
 
 -- --------------------------------------------------------
 
@@ -213,7 +213,7 @@ CREATE TABLE `staff` (
 --
 
 INSERT INTO `staff` (`id_staff`, `name`, `email`, `phone_number`, `birthday`, `position`, `username_account`) VALUES
-(1, 'Phạm Ngọc Quốc', 'pnq0505@gmail.com', '0123456789', '2000-05-03', 'admin', 'admin_1');
+(1, 'Phạm Văn A', 'pnq0505@gmail.com', '0123456789', '2000-05-03', 'admin', 'admin_1');
 
 -- --------------------------------------------------------
 

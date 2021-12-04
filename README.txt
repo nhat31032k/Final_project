@@ -11,11 +11,11 @@
 		password: 123456aA@
 -----------------************-----------------
 	+ STAFF:
-		username: doannguyenlam
-		password: 123456aA@
+		username: nguyennhat
+		password: Nhat3103@
 -----------------************-----------------
-		username: staff
-		password: 123456aA@
+		username: nguyenlam
+		password: Lam123@
 	+ USER:
 		username: A0101/ A0102/ A0103/ A0104/ B0105/ B0106/ B0107/ B0108/ C0109/ C0110 ( tên username là số hiệu của căn hộ)
 		password: 123456aA@

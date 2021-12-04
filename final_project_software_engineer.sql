@@ -51,7 +51,7 @@ INSERT INTO `account` (`ID`, `username`, `password`, `ID_type_account`) VALUES
 (10, 'C0109', '411eccf64ebce9726fb6f6682ad0b1a60303b1d40e5942494ed7e29beacf7d97f5233011188c95c6ce2ddb4d1f6d65b4f1f49320a9fb9ab1aa22ade15c2ada9e', 3),
 (11, 'C0110', '574003adc8a30692a5ae10ed6506cebbb679b75e21b8626496c4cb31268c82483fb7af632dbef1bafa7b9a9d57aac4d3eaccfacef6d445040feac5553efeb7e6', 3),
 (15, 'staff', 'd26b404f160d70c9a350557da18d5b0ffd3b4a6575f84471a40a4a5882a19b9c00eef234dbc832ffadd6d98db6ef0bf05695731e25f4c8006d9a95ec6f662c2a', 2),
-(16, 'doannguyenlam', 'e5434ab56bd30560e16fbead7ea4a672152809e183377e0a99282a7c49a712545e5cfe2e125f9eca9f69052e48f995fb8d0f8b0288ab15a3b15c50abf5b8c15c', 2);
+(16, 'quangnhat', 'e5434ab56bd30560e16fbead7ea4a672152809e183377e0a99282a7c49a712545e5cfe2e125f9eca9f69052e48f995fb8d0f8b0288ab15a3b15c50abf5b8c15c', 2);
 
 -- --------------------------------------------------------
 
@@ -71,8 +71,8 @@ CREATE TABLE `admin` (
 --
 
 INSERT INTO `admin` (`ID`, `name`, `birthday`, `id_account`) VALUES
-(1, 'admin 1', '2021-04-08', 2),
-(2, 'admin 1', '2021-04-08', 2);
+(1, 'admin 1', '2021-11-08', 2),
+(2, 'admin 1', '2021-11-08', 2);
 
 -- --------------------------------------------------------
 
@@ -94,8 +94,8 @@ CREATE TABLE `assignment` (
 --
 
 INSERT INTO `assignment` (`ID`, `date`, `time_start`, `time_finish`, `job_name`, `id_staff`) VALUES
-(1, '2021-04-07', '08:00:00', '17:00:00', 'Quản lý an toàn', 1),
-(2, '2021-04-07', '08:00:00', '17:00:00', 'Quản lý ngân sách', 2);
+(1, '2021-11-07', '08:00:00', '17:00:00', 'Quản lý an toàn', 1),
+(2, '2021-11-07', '08:00:00', '17:00:00', 'Quản lý ngân sách', 2);
 
 -- --------------------------------------------------------
 
@@ -147,11 +147,11 @@ CREATE TABLE `news` (
 --
 
 INSERT INTO `news` (`id`, `title`, `date_post`, `content`, `author`) VALUES
-(1, 'THÔNG BÁO VỀ VIỆC PHÒNG CHỐNG DỊCH', '2021-04-08', 'Người dân trong chung cư đeo khẩu trang khi đi ra ngoài để phòng dịch an toàn', '1'),
-(2, 'THÔNG BÁO GIÁ TIỀN NƯỚC TĂNG', '2021-05-12', 'Tiền nước từ ngày 12/05/2021 sẽ tăng', '0'),
-(3, 'THÔNG BÁO VỀ VIỆC ÁP DỤNG GIỜ TRÁI DẤT', '2021-05-13', '00 giờ ngày 13/05/2021 toàn chung cư sẽ cúp điện áp dụng giờ trái đất', '0'),
-(4, 'THỐNG BÁO VỀ VIỆC ĐỖ XE TRONG HẤM', '2021-05-14', 'Từ ngày 14/05/2021 người dân có nhà trong chung cư sẽ được tạo thẻ giữ xe', '0'),
-(5, 'THÔNG BÁO VỀ VIỆC KHẢO PHUN KHỬ KHUẨN COVID TOÀN CHUNG CƯ', '2021-05-15', '3 giờ ngày 15/05/2021 toàn chung cư sẽ được phun khử khuẩn', '0');
+(1, 'THÔNG BÁO VỀ VIỆC PHÒNG CHỐNG DỊCH', '2021-11-08', 'Người dân trong chung cư đeo khẩu trang khi đi ra ngoài để phòng dịch an toàn', '1'),
+(2, 'THÔNG BÁO GIÁ TIỀN NƯỚC TĂNG', '2021-10-12', 'Tiền nước từ ngày 12/10/2021 sẽ tăng', '0'),
+(3, 'THÔNG BÁO VỀ VIỆC ÁP DỤNG GIỜ TRÁI DẤT', '2021-10-13', '00 giờ ngày 13/10/2021 toàn chung cư sẽ cúp điện áp dụng giờ trái đất', '0'),
+(4, 'THỐNG BÁO VỀ VIỆC ĐỖ XE TRONG HẤM', '2021-10-14', 'Từ ngày 14/10/2021 người dân có nhà trong chung cư sẽ được tạo thẻ giữ xe', '0'),
+(5, 'THÔNG BÁO VỀ VIỆC KHẢO PHUN KHỬ KHUẨN COVID TOÀN CHUNG CƯ', '2021-10-15', '3 giờ ngày 15/10/2021 toàn chung cư sẽ được phun khử khuẩn', '0');
 
 -- --------------------------------------------------------
 
@@ -326,8 +326,8 @@ CREATE TABLE `salary` (
 --
 
 INSERT INTO `salary` (`id`, `month`, `luongcoban`, `phucap`, `thuong`, `id_staff`, `status`) VALUES
-(1, NULL, 5000000, 200000, 500000, 16, 0),
-(2, NULL, 7000000, 300000, 500000, 15, 0);
+(1, NULL, 5200000, 200000, 500000, 16, 0),
+(2, NULL, 7100000, 300000, 500000, 15, 0);
 
 -- --------------------------------------------------------
 
@@ -388,8 +388,8 @@ CREATE TABLE `staff` (
 --
 
 INSERT INTO `staff` (`id`, `name`, `email`, `phone_number`, `birthday`, `position`, `address`, `avt`, `id_account`) VALUES
-(1, 'Doan Nguyen Lam', 'pnq0505@gmail.com', '0123456789', '0000-00-00', 'Bảo vệ', '1 Huỳnh Tấn Phát, Quận 7,Tp.HCM', 'https://bootdey.com/img/Content/avatar/avatar1.png', 16),
-(2, 'Đinh Tiến Bình', 'tbn@gmail.com', '0345345425', '2000-05-02', 'Kế Toán', '2 Huỳnh Tấn Phát, Quận 7,Tp.HCM', 'https://bootdey.com/img/Content/avatar/avatar2.png', 15);
+(1, 'quangnhat', 'pnq0505@gmail.com', '0123456789', '0000-00-00', 'Bảo vệ', '1 Huỳnh Tấn Phát, Quận 7,Tp.HCM', 'https://bootdey.com/img/Content/avatar/avatar1.png', 16),
+(2, 'quach thinh', 'tbn@gmail.com', '0345345425', '2000-05-02', 'Kế Toán', '2 Huỳnh Tấn Phát, Quận 7,Tp.HCM', 'https://bootdey.com/img/Content/avatar/avatar2.png', 15);
 
 -- --------------------------------------------------------
 

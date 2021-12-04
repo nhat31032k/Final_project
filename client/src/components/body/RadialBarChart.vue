@@ -17,13 +17,13 @@ export default {
       series: [],
       chartOptions: {
         chart: {
-          height: 350,
+          height: 300,
           type: "radialBar",
         },
         plotOptions: {
           radialBar: {
             hollow: {
-              size: "70%",
+              size: "80%",
             },
           },
         },

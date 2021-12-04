@@ -4,10 +4,10 @@
     <nav class="navbar navbar-default navbar-trans navbar-expand-lg fixed-top">
       <div class="container">
         <router-link class="navbar-brand text-brand" v-if="$store.state.role === 3" to="/home"
-          >Gia Lai <span class="color-b">Hoàng Anh</span></router-link
+          >Gia Lai <span class="text-color">Hoang Anh</span></router-link
         >
         <router-link class="navbar-brand text-brand"  v-if="$store.state.role === 2" to="/staff-home"
-          >Gia Lai <span class="color-b">Hoàng Anh</span></router-link
+          >Gia Lai <span class="text-color">Hoang Anh</span></router-link
         >
 
         <div
@@ -135,6 +135,12 @@ a:hover {
 .link-a {
   color: #ffffff;
   text-decoration: none;
+}
+.text-color{
+  color: transparent;
+  background-clip: text;
+  -webkit-background-clip: text;
+  background-image: linear-gradient( to right,  #14f144ea,  #ece911);
 }
 
 @media (min-width: 768px) {
@@ -334,5 +340,8 @@ a:hover {
   top: 10px;
   transform: rotate(-135deg);
   opacity: 0.9;
+}
+.btn{
+  background-color: blue;
 }
 </style>

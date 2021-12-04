@@ -7,15 +7,14 @@ export const createAccount = (req, res) => {
 
     if (data.password === data.password_confirm) {
         delete data.password_confirm
-        insertAccount(data, (err, results) => {
+        addAccount(data, (err, results) => {
             if (err) {
                 res.send(err);
             } else {
                 res.json({ code: 0, message: `Thêm ${data.username} thành công` });
             }
         });
-    }
-    else {
+    } else {
         res.json({ code: 1, message: 'Incorrect username/password' })
     }
 
@@ -36,9 +35,9 @@ export const authentication = (req, res) => {
                 }
                 var token = generateToken(data)
 
-              
-                res.send({ status: 200, msg: 'Login Success !!', token: token } )
-                //res.redirect('/');
+
+                res.send({ status: 200, msg: 'Login Success !!', token: token })
+                    //res.redirect('/');
             } else {
                 res.send({ status: 500, msg: 'Incorrect username/password !!' })
             }
@@ -58,7 +57,7 @@ export const checkUsername = (req, res) => {
         if (err) {
             res.send(err)
         } else {
-            res.send({ data: result});
+            res.send({ data: result });
         }
     })
 }
